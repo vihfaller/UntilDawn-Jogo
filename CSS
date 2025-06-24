@@ -1,35 +1,83 @@
-*{/* Tag utilizada para aplicar algo em toda a pagina web */
+ *{
     padding: 0;
     margin: 0;
 }
 
-.container-pai{
-    background-color: rgb(0, 0, 0);
-    height: 500px;
-    
+header{
+    background-color: rgb(59, 59, 59) 0, 0;
     display: flex;
-    flex-direction: center; /* controla a direçao do eixo principal */
-    justify-content: center; /* controla como os itens serao dispostos no eixo principal */
-    align-items: center; /* controla como os itens serao dispostos no eixo secundario */
-    flex-wrap: wrap; /* controla como os itens se comportam quando a tela diminui */
-    gap: 20px; /* define o espaçamento entre elementos */
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 0px; /* cima, baixo, direita, esquerda */
 }
 
-
-
-#filho-1{
-    background-color: aquamarine;
-    flex-grow: 1;
-    order: 0; /* declara a ordem, justamente mexendo na ordem dos elementos */
+a{
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+    justify-content: space-between;
 }
 
-#filho-2{
-    background-color: blueviolet;
-    flex-grow: 1;
-    align-self:  /* como vai ficar colocado na pagina com apenas aquele item */
+#banner{
+    height: 700px;
+    background-image: url(https://eu-images.contentstack.com/v3/assets/bltbc1876152fcd9f07/bltcddd2c17c421b2ce/6709318b60f9cab7e91cc4b6/All-Until-Dawn-remakes-and-how-to-get-them.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
 }
 
-#filho-3{
-    background-color: chartreuse;
-    flex-grow: 1; /* numero do tamanho do elemento */
+#banner div{
+    
+    background-color: rgba(12, 30, 134, 0.322);
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    
+}
+
+#banner2 div{
+    background-color: rgba(0, 0, 0, 0.699);
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 15px;
+    margin: 50px;
+}
+
+footer{
+    background-color: rgb(54, 5, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+button{
+    font-size: 17px;
+    margin: 0px;
+    border-radius: 15px;
+    padding: 10px;
+
+}
+
+.title button{
+    margin-top: 10px;
+}
+
+.colorText{
+    color: aliceblue;
+    
+}
+
+.colorText2{
+    color: white;
 }
